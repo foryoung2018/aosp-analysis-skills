@@ -6,7 +6,8 @@
   "scripts": {
     "build": " node build.js",
     "test": "node tools/test.js",
-    "deploy": "npm run build && git add . && git commit -m 'Deploy skills' && git push origin gh-pages"
+    "deploy": "npm run build && git add . && git commit -m 'Deploy skills' && git push origin gh-pages",
+    "postinstall": "node install.js"
   },
   "keywords": [
     "aosp",
@@ -16,11 +17,14 @@
     "opencode",
     "skills"
   ],
-  "author": "",
+  "author": "foryoung2018",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/aosp-analysis-skills.git"
+    "url": "https://github.com/foryoung2018/aosp-analysis-skills.git"
   },
-  "homepage": "https://github.com/your-username/aosp-analysis-skills#readme"
+  "homepage": "https://github.com/foryoung2018/aosp-analysis-skills#readme",
+  "dependencies": {
+    "glob": "^10.3.0"
+  }
 }
