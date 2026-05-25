@@ -39,26 +39,34 @@
 
 ## 安装使用
 
-### 方法一：GitHub Pages 引用（推荐）
+### 方法一：npm 安装（推荐）
+
+```bash
+npm install -g aosp-analysis-skills
+```
+
+安装后自动将 skills 复制到 `~/.config/opencode/skills/` 目录，立即可用。
+
+### 方法二：GitHub Pages 引用
 
 1. 在你的 opencode.json 中添加配置：
 
 ```json
 {
   "skills": {
-    "urls": ["https://your-username.github.io/aosp-analysis-skills/.well-known/skills/"]
+    "urls": ["https://foryoung2018.github.io/aosp-analysis-skills/.well-known/skills/"]
   }
 }
 ```
 
 2. 重启 opencode 使配置生效
 
-### 方法二：本地克隆
+### 方法三：本地克隆
 
 1. 克隆仓库到本地：
 
 ```bash
-git clone https://github.com/your-username/aosp-analysis-skills.git ~/aosp-analysis-skills
+git clone https://github.com/foryoung2018/aosp-analysis-skills.git ~/aosp-analysis-skills
 ```
 
 2. 在 opencode.json 中配置本地路径：
