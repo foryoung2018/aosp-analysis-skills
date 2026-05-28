@@ -5,6 +5,12 @@ All notable changes to AOSP Analysis Skills will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2024-05-28
+
+### Added
+- **aosp-surfaceflinger-core**: SurfaceFlinger 整体架构、初始化流程、合成流水线分析
+- **aosp-surfaceflinger-vsync**: VSync 调度算法 (线性回归预测、定时器调度、相位调制)
+
 ## [1.0.0] - 2024-05-25
 
 ### Added

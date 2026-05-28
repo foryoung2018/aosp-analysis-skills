@@ -34,6 +34,10 @@
 - `framework/event-flow` - Frameworks Native 事件处理流程
 - `framework/native` - Frameworks Native 架构分析
 
+### 🖥️ SurfaceFlinger
+- `framework/surfaceflinger-core` - SurfaceFlinger 整体架构、初始化流程、合成流水线分析
+- `framework/surfaceflinger-vsync` - VSync 调度算法: 线性回归预测、定时器调度、相位调制
+
 ### 🖼️ 桌面模式
 - `desktop/window-decor` - 桌面模式窗口装饰系统
 
@@ -88,6 +92,8 @@ git clone https://github.com/foryoung2018/aosp-analysis-skills.git ~/aosp-analys
 检查 WindowManagerService 初始化流程   # 自动触发 wms-lifecycle  
 输入事件是如何分发到应用的？          # 自动触发 input-dispatching
 后台进程被杀死的机制是什么？          # 自动触发 background-kill-restrictions
+分析 SurfaceFlinger 合成流水线          # 自动触发 surfaceflinger-core
+VSync 调度机制是什么？                 # 自动触发 surfaceflinger-vsync
 ```
 
 ## 项目结构
